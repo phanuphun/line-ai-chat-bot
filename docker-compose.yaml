@@ -1,0 +1,21 @@
+version: '3.8'
+
+networks:
+  line_net:
+    driver: overlay
+    external: true
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - OPEN_WEB_UI_URL_BASE=${OPEN_WEB_UI_URL_BASE}
+      - OPEN_WEB_UI_API_KEY=${OPEN_WEB_UI_API_KEY}
+      - LINE_CH_ACCESS_KEY=${LINE_CH_ACCESS_KEY}
+    networks:
+      - line_net
