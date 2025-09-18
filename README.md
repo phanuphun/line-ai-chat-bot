@@ -5,7 +5,7 @@ This is a mini workshop for building a simple LINE chat bot using Ollama, which 
 
 ## Preview
 <div align="left">
-   <img src="demo/01.gif" width="70%">
+   <img src="demo/01.gif" width="40%">
 </div><br>
 
 
