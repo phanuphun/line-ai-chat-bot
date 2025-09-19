@@ -35,13 +35,13 @@ This is a mini workshop for building a simple LINE chat bot using Ollama, which 
     - Go to Settings > Account to find "Change Password" and your API Key. Now you have your API Key!
 5. Set up the LINE webhook in the Messaging API with the path `/api/v1/line/webhook`.
 
-### Run App Server (Docker)
+## Run App Server (Docker)
 
 1. Run `docker-compose up -d --build` to start the app server.
 2. Set `OPEN_WEB_UI_URL_BASE` to your Docker DNS with the `http://` prefix. For example: `http://open-webui:8080`
 3. Now you can chat with your bot!
 
-### Run in Development Mode
+## Run in Development Mode
 
 1. Run `npm install` to install dependencies.
 2. Run `npm run dev` to start the server.
